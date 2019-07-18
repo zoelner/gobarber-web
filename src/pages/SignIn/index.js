@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Form, Input } from "@rocketseat/unform";
 import * as Yup from "yup";
 
-import logo from "~/assets/logo.svg";
+import { ReactComponent as Logo } from "~/assets/logo.svg";
 import { signInRequest } from "~/store/modules/auth/actions";
 
 const schema = Yup.object().shape({
@@ -24,7 +24,7 @@ export default function SignIn() {
 
   return (
     <>
-      <img src={logo} alt="GoBarber" />
+      <Logo className="logo" alt="GoBarber" />
 
       <Form schema={schema} onSubmit={handleSubmit}>
         <Input name="email" type="email" placeholder="Seu e-email" />

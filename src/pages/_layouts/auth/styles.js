@@ -14,6 +14,10 @@ export const Content = styled.div`
   max-width: 315px;
   text-align: center;
 
+  svg.logo {
+    fill: #fff;
+  }
+
   form {
     display: flex;
     flex-direction: column;
